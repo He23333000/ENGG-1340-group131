@@ -10,9 +10,9 @@ Blackjack (formerly Black Jack and Vingt-Un) is a casino banking game, and we wi
 
 # Rules
 * different cards will gain different number of points
-  Cards with numbers – from 2 to 10 – gain respective points (have their face value).
-  Jack (J), Queen (Q) and King (K) gain 10 points.
-  Ace (A) might be counted as 11 or 1 point, depending on the value needed for a best hand.
+  1. Cards with numbers – from 2 to 10 – gain respective points (have their face value).
+  2. Jack (J), Queen (Q) and King (K) gain 10 points.
+  3. Ace (A) might be counted as 11 or 1 point, depending on the value needed for a best hand.
   
 * The goal of blackjack is to beat the dealer's hand without going over 21.
 
@@ -35,12 +35,12 @@ Blackjack (formerly Black Jack and Vingt-Un) is a casino banking game, and we wi
 * Blackjack usually means you win 1.5 the amount of your bet. Depends on the casino.
 
 * Winning consequence
-  If you win without blackjack, the dealer will give you all his bet for a single play. 
-  If you win with blackjack, the dealer will give you 1.5 x the amount of his bet for a single play.
+  1. If you win without blackjack, the dealer will give you all his bet for a single play. 
+  2. If you win with blackjack, the dealer will give you 1.5 x the amount of his bet for a single play.
  
 * losing consequence
-  If the dealer wins without blackjack, you will give the dealer all his bet for a single play. 
-  If the dealer wins with blackjack, you will give the dealer 1.5 x the amount of his bet for a single play.
+  1. If the dealer wins without blackjack, you will give the dealer all his bet for a single play. 
+  2. If the dealer wins with blackjack, you will give the dealer 1.5 x the amount of his bet for a single play.
 
 
 

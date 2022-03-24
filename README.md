@@ -51,7 +51,7 @@ Assumption: the allocation of cards is completely a random process.
 3. player has to decide whether to 'Hit' a new card or not, and this extraction process can be repeated until the player chooses to 'Stand', stating that the winning or losing condition stated in the rules is not reached.
 4. The dealer will automatically decide to 'Hit' or to 'Stand'.
 5. If the player wins, the correspoinding bet is given from the dealer to the player, otherwise, it is the reverse.
-6. Once you lose all bets, you can't play anymore.
+6. Once you enter 'N' for no, the game will end, and the overall gain or loss will be displayed.
 
 
 

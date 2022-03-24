@@ -1,3 +1,10 @@
+``` 
+Group Member: Xu Chenning (3035771804)
+              He Jinliang (3035949279)
+              
+Project Game: Blackjack
+```
+
 # Blackjack
 Blackjack (formerly Black Jack and Vingt-Un) is a casino banking game, and we will implement c++ to create this text-based player-to-machine game.
 

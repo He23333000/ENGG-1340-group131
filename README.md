@@ -1,1 +1,3 @@
-# engg-1340-group-project
+# Gobang (five-in-a-row) game
+
+

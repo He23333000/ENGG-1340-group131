@@ -1,7 +1,4 @@
-//This file contains the function of dealing, hand calculations and hand comparisons.
-
-//deal
-void deal()
+//This file contains the function of hand calculations and hand comparisons.
 
 
 //hand calculation

@@ -1,0 +1,8 @@
+//庄家和玩家的手牌以两个int array储存，以下function input皆为array。
+
+//计算手牌点数
+int hand_cal(int hand[], int hand[])
+
+//比较手牌
+int hand_com(int hand_dealer[], hand_player[])
+

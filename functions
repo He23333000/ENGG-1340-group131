@@ -1,6 +1,10 @@
-//庄家和玩家的手牌以两个int array储存，以下function input皆为array。
+//This file contains the function of dealing, hand calculations and hand comparisons.
 
-//计算手牌点数
+//deal
+void deal()
+
+
+//hand calculation
 int hand_cal(int hand[5]){
     int i;
     bool Ace = false;
@@ -40,6 +44,24 @@ int hand_cal(int hand[5]){
     else return 0;
 }
 
-//比较手牌
-int hand_com(int hand_dealer[], hand_player[])
+//hand compare
+int hand_com(int dealer, int player, int bet){
+    cout<<"Dealer Hand: "<<dealer<<endl;
+    cout<<"Your Hand: "<<player<<endl;
+    cout<<"Your Bet: "<<bet<<endl;
+    
+    if (dealer>player){
+        cout<<"Game result: dealer wins."<<endl;
+        cout<<"You lost $"<<bet<<" for this hand";
+    }
+
+    if (dealer>player){
+        cout<<"Game result: you win."<<endl;
+        cout<<"You won $"<<bet<<" for this hand";
+    }  
+    
+    if (dealer == player){
+        cout<<"Game result: draw."<<endl;
+    }    
+}
 

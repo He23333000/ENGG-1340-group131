@@ -3,7 +3,7 @@
 //这里的hand[5]已经把J,Q,K变成了10，A变成了1点
 
 
-//hand calculation
+//hand calculation 计算一个手牌总的点数
 int hand_cal(int hand[5]){
     int i;
     bool Ace = false;
@@ -43,7 +43,7 @@ int hand_cal(int hand[5]){
     else return 0;
 }
 
-//hand compare
+//hand compare 比较两副手牌大小
 int hand_com(int dealer, int player, int bet){
     cout<<"Dealer Hand: "<<dealer<<endl;
     cout<<"Your Hand: "<<player<<endl;

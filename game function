@@ -9,6 +9,7 @@ struct game_data{
 	string hand_player[5];
 	string game_result;
 	int bet_amount;
+	int bankroll_change;
 };
 
 void showhand(int n, int side, string hand[]){
@@ -186,9 +187,18 @@ game_data game(int bet_amount)
     }
     struct game_data result;
     
-    if(hand_com(hand_cal(hand_dealer),hand_cal(hand_player),bet_amount)==0) result.game_result="Dealer Wins";
-    else if (hand_com(hand_cal(hand_dealer),hand_cal(hand_player),bet_amount)==1) result.game_result="Player Wins";
-    else result.game_result="Draw";
+    if(hand_com(hand_cal(hand_dealer),hand_cal(hand_player),bet_amount)==0) {
+    result.game_result="Dealer Wins";
+    result.bankroll_change=bet_amount;
+    }
+    else if (hand_com(hand_cal(hand_dealer),hand_cal(hand_player),bet_amount)==1) {
+    result.game_result="Player Wins";
+    result.bankroll_change=-bet_amount;
+    }
+    else {
+    result.game_result="Draw";
+    result.bankroll_change=0;
+    }
     for (i=0;i<n;i++) result.hand_dealer[i]=hand_dealer[i];
     for (i=0;i<n;i++) result.hand_player[i]=hand_player[i];
     result.bet_amount=bet_amount;

@@ -1,15 +1,18 @@
 //This file contains the function of hand calculations and hand comparisons.
 
 //hand calculation 计算一个手牌总的点数
-int hand_cal(int hand[5]){
+int hand_cal(string hand_string[5]){
     int i;
+    int j;
     bool Ace = false;
     int total_point=0;
+    int card_int[13]={1,2,3,4,5,6,7,8,9,10,10,10,10};
+    int hand[5];
     
-    //把A,J,Q,K转化成相应的点数
+    //把string转化成相应的int;
     for (i=0;i<5;i++){
-        if (hand[i]="J" or hand[i]="Q" or hand[i]="K") hand[i]=10;
-        if (hand[i]="A") hand[i]=1;
+        for (j=0,j<13,j++){
+        if (card_int[j]==hand_string[i]) hand[i]=card_int[j];
     }
     
     for (i=0; i<5; i++){

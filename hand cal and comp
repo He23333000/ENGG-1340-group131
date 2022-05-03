@@ -1,5 +1,7 @@
 //This file contains the function of hand calculations and hand comparisons.
 
+//这里的hand[5]已经把J,Q,K变成了10，A变成了1点
+
 
 //hand calculation
 int hand_cal(int hand[5]){

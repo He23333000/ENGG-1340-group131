@@ -194,11 +194,3 @@ game_data game(int bet_amount)
     result.bet_amount=bet_amount;
     return result;
 }
-
-int main(){
-    game_data P;
-    P=game(1);
-    cout<<endl;
-    cout<<P.game_result;
-    return 0;
-}

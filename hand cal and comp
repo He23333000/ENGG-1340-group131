@@ -1,13 +1,16 @@
 //This file contains the function of hand calculations and hand comparisons.
 
-//这里的hand[5]已经把J,Q,K变成了10，A变成了1点
-
-
 //hand calculation 计算一个手牌总的点数
 int hand_cal(int hand[5]){
     int i;
     bool Ace = false;
     int total_point=0;
+    
+    //把A,J,Q,K转化成相应的点数
+    for (i=0;i<5;i++){
+        if (hand[i]="J" or hand[i]="Q" or hand[i]="K") hand[i]=10;
+        if (hand[i]="A") hand[i]=1;
+    }
     
     for (i=0; i<5; i++){
         if (hand[i]==1) Ace=true;

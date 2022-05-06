@@ -28,10 +28,6 @@ struct Bet
 };
 
 void format();
-void showhand(int n, int side, string hand[]);
-int hand_cal(string hand_string[5]);
-int hand_com(int dealer, int player, int bet);
-int hand_com_new(int dealer, int player, int bet);
 game_data game(int bet_amount)
 
 #endif

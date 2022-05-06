@@ -1,7 +1,4 @@
-#include <iostream>
-#include <cstdlib>
-#include <time.h>
-#include <unistd.h>
+#include "test.h"
 using namespace std;
 
 

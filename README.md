@@ -57,7 +57,8 @@ Assumption: the allocation of cards is completely a random process.
 1. Bankroll system. We decide to implement a bankroll system that allows players to bet their desired amount and saves plays’ latest chip amount. Each new player will be initialised with $10k. As long as they do not lose everything, the game keeps going. Data structures for storing game status and file input/output will be applied to achieve this feature.
 2. A full record of game status. We will keep record of the result of every games and the changes of plays’ bankroll. Data structures for storing game status , file input/output and dynamic memory management will be applied to achieve this feature.
 3. Automatic dealer. We completely mock the behaviour of blackjack dealer in casinos. The dealer will assign cards randomly for each game and operate according to the game rule. Generation of random game sets or events will be used for cards assignment and program codes in multiple files will be applied to modulise each function of deal's tasks.
-4. Checking data validation. If the input data is not the data we want, we'll ask player to retype the input information.
+4. Checking data validation. If the input data including file text, amount of bet, command, are not the data we want, we'll ask player to retype the input information.
+5. Programs are compiled in multiple files.
 
 
 

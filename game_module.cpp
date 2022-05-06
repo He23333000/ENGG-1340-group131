@@ -1,15 +1,4 @@
 #include "test.h"
-#include <iostream>
-#include <vector>
-#include <string>
-#include <iomanip>
-#include <fstream>
-#include <sstream>
-#include <cstdlib>
-#include <time.h>
-#include <unistd.h>
-using namespace std;
-
 
 void showhand(int n, int side, string hand[]){
     int i;

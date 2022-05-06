@@ -1,5 +1,5 @@
 hit
+stand
 hit
-stand
-stand
+hit
 stand

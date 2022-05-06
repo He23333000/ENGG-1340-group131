@@ -3,8 +3,10 @@ Group Number: 131
 Group Member: Xu Chenning (3035771804)
               He Jinliang (3035949279)
               
-Project Game: Blackjack
+Project Game: Blackjack 
 ```
+# reminder
+Acamemy server 21 is used for testing procedure
 
 # Blackjack
 Blackjack (formerly Black Jack and Vingt-Un) is a casino banking game, and we will implement c++ to create this text-based player-to-machine game.
@@ -54,12 +56,22 @@ Assumption: the allocation of cards is completely a random process.
 
 
 # Features
-1. Bankroll system. We decide to implement a bankroll system that allows players to bet their desired amount and saves plays’ latest chip amount. Each new player will be initialised with $10k. As long as they do not lose everything, the game keeps going. Data structures for storing game status including current bet, bet change and final bet, and file input/output for storing previous records will be applied to achieve this feature.
-2. A full record of game status. We will keep record of the result of every games and the changes of plays’ bankroll. Data structures for storing game status , file input/output and dynamic memory management will be applied to achieve this feature.
-3. Automatic dealer. We completely mock the behaviour of blackjack dealer in casinos. The dealer will assign cards randomly for each game and operate according to the game rule. Generation of random game sets or events will be used for cards assignment and program codes in multiple files will be applied to modulise each function of deal's tasks.
-4. Checking data validation. If the input data including file text, amount of bet, command, are not the data we want, we'll ask player to retype the input information.
-5. Programs are compiled in multiple files inlcuding .h/.cpp/.txt
-6. Dynamic array, vectors are used to store winners since we don't know how many times you will play, combined with the file storage, we can updata the previous features more completely.
+1. 2 Data structures are used for recording game status and bet change for a single round.
+2. It allows a full record of game status as game is processing. We will keep record of the result of every games and the changes of plays’ bankroll. file input for gamer input and file output for recording previous records will be applied to achieve this feature.
+3. It deploys an automatic dealer. We completely mock the behaviour of blackjack dealer in casinos. The dealer will assign cards randomly for each game and operate according to the game rule. Generation of random game sets or events will be used for cards assignment and program codes in multiple files will be applied to modulise each function of deal's tasks.
+4. Programs are compiled in multiple files inlcuding .h/.cpp/.txt, and then compiled and converged through makefile.
+5. Dynamic array, vectors are used to store winners since we don't know how many times you will play, combined with the file storage, we can updata the previous features more completely.
+6. Checking data validation. If the input data including file text, amount of bet, command, are not the data we want, we'll ask player to retype the input information to prevent any possible input errors.
 
+# Assumptions 
+1. This program assumes that the user will input the data in the correct format. For example, when asked for how much money they have, we assume that the user will input 4000 instead of "four thousand".
+2. The program will only terminate once the user chooses to exit or the bet has used up.
+3. The dealer has greater chance to win due to programming calculation.
+4. There is a limited number of file input, but the program can fun successfully under all testing conditons.
+
+# Compilation and execution instruction
+1. Download the source files in github and export it to Linux.
+2. Once exported to Linux, simply type in "make" and the program will be compiled.
+3. Type "./program" to execute the program.
 
 

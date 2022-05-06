@@ -9,6 +9,7 @@ continue
 200
 continue
 50
+show record
 continue
 30
 continue

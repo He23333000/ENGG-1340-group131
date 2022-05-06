@@ -1,15 +1,5 @@
 #ifndef test
 #define test
-#include <iostream>
-#include <vector>
-#include <string>
-#include <iomanip>
-#include <fstream>
-#include <sstream>
-#include <cstdlib>
-#include <time.h>
-#include <unistd.h>
-using namespace std;
 
 struct game_data{
     string hand_dealer[5];
@@ -27,7 +17,6 @@ struct Bet
 	string winner;
 };
 
-void format();
 game_data game(int bet_amount)
 
 #endif

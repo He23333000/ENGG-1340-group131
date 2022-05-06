@@ -19,6 +19,14 @@ struct game_data{
 	int bankroll_change;
 };
 
+struct Bet
+{
+	double initial_bet=0;
+	double bet_change=0;
+	double current_bet=0;
+	string winner;
+};
+
 void format();
 void showhand(int n, int side, string hand[]);
 int hand_cal(string hand_string[5]);

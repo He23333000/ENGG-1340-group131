@@ -4,13 +4,7 @@
 #include <unistd.h>
 using namespace std;
 
-struct game_data{
-    string hand_dealer[5];
-	string hand_player[5];
-	string game_result;
-	int bet_amount;
-	int bankroll_change;
-};
+
 void showhand(int n, int side, string hand[]){
     int i;
     if (side==0) {

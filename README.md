@@ -57,21 +57,23 @@ Assumption: the allocation of cards is completely a random process.
 
 # Features
 1. 2 Data structures are used for recording game status and bet change for a single round.
-2. It allows a full record of game status as game is processing. We will keep record of the result of every games and the changes of plays’ bankroll. file input for gamer input and file output for recording previous records will be applied to achieve this feature.
-3. It deploys an automatic dealer. We completely mock the behaviour of blackjack dealer in casinos. The dealer will assign cards randomly for each game and operate according to the game rule. Generation of random game sets or events will be used for cards assignment and program codes in multiple files will be applied to modulise each function of deal's tasks.
-4. Programs are compiled in multiple files inlcuding .h/.cpp/.txt, and then compiled and converged through makefile.
-5. Dynamic array, vectors are used to store winners since we don't know how many times you will play, combined with the file storage, we can updata the previous features more completely.
-6. Checking data validation. If the input data including file text, amount of bet, command, are not the data we want, we'll ask player to retype the input information to prevent any possible input errors.
+2. It allows a full record of game status as the game is processing. We will keep a record of the result of every game and the changes in the plays’ bankroll. file input for gamer input and file output for recording previous records will be applied to achieve this feature.
+3. It deploys an automatic dealer. We completely mock the behavior of blackjack dealers in casinos. The dealer will assign cards randomly for each game and operate according to the game rule. Generation of random game sets or events will be used for card assignment and program codes in multiple files will be applied to modulize each function of the deal's tasks.
+4. Programs are compiled in multiple files including .h/.cpp/.txt, and then compiled and converged through makefile.
+5. Dynamic array, vectors are used to store winners since we don't know how many times you will play, combined with the file storage, we can update the previous features more completely.
+6. Checking data validation. If the input data including file text, amount of bet, and command, are not the data we want, we'll ask the player to retype the input information to prevent any possible input errors.
 
 # Assumptions 
-1. This program assumes that the user will input the data in the correct format. For example, when asked for how much money they have, we assume that the user will input 4000 instead of "four thousand".
-2. The program will only terminate once the user chooses to exit or the bet has used up.
-3. The dealer has greater chance to win due to programming calculation.
-4. There is a limited number of file input, but the program can fun successfully under all testing conditons.
+1. Random features have been implemented. However, it can't be ensured to generate different outputs under the same data inputs.
+2. This program assumes that the user will input the data in the correct format. For example, when asked for how much money they have, we assume that the user will input 4000 instead of "four thousand".
+3. The program will only terminate once the user chooses to exit or the bet has used up.
+4. The dealer has a greater chance to win due to programming calculation.
+5. There is a limited number of file inputs, but the program can function successfully under all testing conditions.
 
 # Compilation and execution instruction
-1. Download the source files in github and export it to Linux.
+1. Download the source files on GitHub and export them to Linux.
 2. Once exported to Linux, simply type in "make" and the program will be compiled.
 3. Type "./program" to execute the program.
+
 
 

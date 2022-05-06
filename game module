@@ -11,7 +11,6 @@ struct game_data{
 	int bet_amount;
 	int bankroll_change;
 };
-
 void showhand(int n, int side, string hand[]){
     int i;
     if (side==0) {
@@ -86,13 +85,13 @@ int hand_com(int dealer, int player, int bet){
     
     if (dealer>player){
         cout<<"Game result: dealer wins."<<endl;
-        cout<<"You lost $"<<bet<<" for this hand";
+        cout<<"You lost $"<<bet<<" for this hand"<<endl;
         return 0;
     }
 
     if (dealer<player){
         cout<<"Game result: you win."<<endl;
-        cout<<"You won $"<<bet<<" for this hand";
+        cout<<"You won $"<<bet<<" for this hand"<<endl;
         return 1;
     }  
     
@@ -102,6 +101,18 @@ int hand_com(int dealer, int player, int bet){
     }
     return 0;
 }
+
+int hand_com_new(int dealer, int player, int bet){
+    
+    if (dealer>player) return 0;
+
+    if (dealer<player) return 1;
+    
+    if (dealer == player) return 2;
+
+    return 0;
+}
+
 
 //major function
 game_data game(int bet_amount)
@@ -126,12 +137,16 @@ game_data game(int bet_amount)
     cout<<hand_cal(hand_dealer)<<endl;
     showhand(2,1, hand_player);
     cout<<hand_cal(hand_player)<<endl;
-    
+
     while (n<5 and stand==false){
         string option;
         cout<<endl;
         cout<<"Hit or stand? Please enter 'hit' or 'stand'"<<endl;
-        cin>>option;
+        ifstream fin;
+        string file="hitstand1.txt";
+        fin.open(file);
+        fin>>option;
+        cout<<option<<endl;
         
         if (option == "hit"){
            hand_dealer[n]=card[rand()%13]; 
@@ -188,12 +203,12 @@ game_data game(int bet_amount)
     struct game_data result;
     
     if(hand_com(hand_cal(hand_dealer),hand_cal(hand_player),bet_amount)==0) {
-    result.game_result="Dealer Wins";
+    result.game_result="Dealer";
     result.bankroll_change=bet_amount;
     }
-    else if (hand_com(hand_cal(hand_dealer),hand_cal(hand_player),bet_amount)==1) {
-    result.game_result="Player Wins";
-    result.bankroll_change=-bet_amount;
+    else if (hand_com_new(hand_cal(hand_dealer),hand_cal(hand_player),bet_amount)==1) {
+    result.game_result="Player";
+    result.bankroll_change=bet_amount;
     }
     else {
     result.game_result="Draw";

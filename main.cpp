@@ -1,13 +1,5 @@
-#include <iostream>
-#include <vector>
-#include <string>
-#include <iomanip>
-#include <fstream>
-#include <sstream>
-#include <cstdlib>
-#include <time.h>
-#include <unistd.h>
-using namespace std;
+#include "test.h"
+
 int main()
 {
 	Bet bet;

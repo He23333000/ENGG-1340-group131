@@ -33,8 +33,6 @@ Blackjack (formerly Black Jack and Vingt-Un) is a casino banking game, and we wi
  
 * If you are dealt 21 from the start (Ace & 10), you got a blackjack.
 
-* Blackjack usually means you win 1.5 the amount of your bet. Depends on the casino.
-
 * Winning consequence
   1. If you win without blackjack, the dealer will give you all his bet for a single play. 
   2. If you win with blackjack, the dealer will give you 1.5 x the amount of his bet for a single play.
